@@ -1,14 +1,10 @@
 // Assignment code here
-//TODO
-//Create a button to generate a new password.
-//Set up a series of prompts for password criteria.
-//Prompt the user for password length.
-//Validate that password length is between 8 and 128 characters.
-//Prompt the user for which character types to include in the password.
-//Confirm if user wants to include lowercase, uppercase, numeric, and/or special characters.
-//Validate that at least one character type is selected.
-//Generate a password that matches the selected criteria.
-//Display the generated password in an alert or write it to the page.
+var lowerCaseChars= "abcdefghijklmnopqrstuvwxyz";
+var upperCaseChars= "ADCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numericChars= "0123456789";
+var specialChars= "~!@#$%^&*()_-+="
+
+function generatePassword()
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -23,4 +19,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  generateBtn.addEventListener("click", writePassword);
