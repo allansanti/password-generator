@@ -21,7 +21,7 @@ var special= ["~", "!", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+",];
 function generatePassword() {
   var password= ""
   var passwordLength= prompt("How many characters would you like the password to have? Select a number between 8 and 128")
-  console.log("passwordlength", passwordLength)
+  console.log("passwordlength: ", passwordLength)
 
 //Validation, so it doesn't drop an error
   while (passwordLength<8 || passwordLength>128) {
@@ -31,11 +31,11 @@ function generatePassword() {
   var includeLowercase= confirm("Would you like to include lowercase characters?")
   console.log("Include lowercase: " + includeLowercase)
   var includeUppercase= confirm("Would you like to include uppercase characters?")
-  console.log("Include uppercase" + includeUppercase)
+  console.log("Include uppercase: " + includeUppercase)
   var includeNumeric= confirm("Would you like to include numeric characters?")
-  console.log("Include numeric" + includeNumeric)
+  console.log("Include numeric: " + includeNumeric)
   var includeSpecial= confirm("Would you like to include special characters?")
-  console.log("Include special" + includeSpecial)
+  console.log("Include special: " + includeSpecial)
 
 while (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial){
   alert("Select at least one character type");
